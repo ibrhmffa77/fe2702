@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body id="showCard">
+    <div class="container">
+        <header>
+           <div class="title">PRODUCT LIST</div> 
+           <div id="iconCard" class="icon-card" onclick="toggleCard()">
+            <i class="bi bi-cart3"></i>
+            <div id="card-count">0</div>
+        </div>
+        </header>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="assets/images/1.png" alt="chair">
+                <h2>LD01 LOUNGE CHAIR</h2>
+                <div class="price">200$</div>
+                <button id="addCard" onclick="addToCard('LD01 LOUNGE CHAIR', 200)"> Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/2.png" alt="chair">
+                <h2>LD02 LOUNGE CHAIR</h2>
+                <div class="price">250$</div>
+                <button id="addCard" onclick="addToCard('LD02 LOUNGE CHAIR', 250)"> Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/3.png" alt="chair">
+                <h2>LD03 LOUNGE CHAIR</h2>
+                <div class="price">290$</div>
+                <button id="addCard"onclick="addToCard('LD03 LOUNGE CHAIR', 290)"> Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/4.png" alt="chair">
+                <h2>LD04 LOUNGE CHAIR</h2>
+                <div class="price">200$</div>
+                <button id="addCard" onclick="addToCard('LD04 LOUNGE CHAIR', 200)"> Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/5.png" alt="chair">
+                <h2>LD05 LOUNGE CHAIR</h2>
+                <div class="price">300$</div>
+                <button id="addCard" onclick="addToCard('LD05 LOUNGE CHAIR', 300)"> Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/6.png" alt="chair">
+                <h2>LD06 LOUNGE CHAIR</h2>
+                <div class="price">200$</div>
+                <button id="addCard" onclick="addToCard('LD06 LOUNGE CHAIR', 200)" > Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/7.png" alt="chair">
+                <h2>LD07 LOUNGE CHAIR</h2>
+                <div class="price">200$</div>
+                <button id="addCard" onclick="addToCard('LD07 LOUNGE CHAIR', 200)"> Add to Card</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/8.png" alt="chair">
+                <h2>LD08 LOUNGE CHAIR</h2>
+                <div class="price">200$</div>
+                <button id="addCard" onclick="addToCard('LD08 LOUNGE CHAIR', 200)"> Add to Card</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shopping-card" style="display: none;">
+        <h1>Shopping Card</h1>
+        <div class="shopping-list">
+          
+             <div class="shopping-item">
+                <!-- <div class="item-img">
+                    <img src="assets/images/1.png" alt= "chair" >
+                </div>     
+                <div class="name">
+                jhhkk
+                </div>  
+                <div class="price">jjh</div> 
+                <div class="quantity">
+                    <span class="minus">< </span>
+                    <span>1</span>
+                    <span class="plus">></span>
+                </div>  -->
+
+
+            </div>
+        </div>
+        <div class="btn">
+            <button class="close" id="close" >Close</button>
+            <button class="clearcard" onclick="clearCard()">Clear Card</button>
+        </div>
+    </div>
+
+</body>
+</html>
