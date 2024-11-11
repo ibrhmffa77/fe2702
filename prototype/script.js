@@ -50,7 +50,7 @@ Car.compare = function(car1, car2){
     }
     else if( car2.year > car1.year){
         console.log(car2.make)
-        return car2
+        return car2 
     }
     else{
         return null
